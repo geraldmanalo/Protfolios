@@ -1,0 +1,591 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Body Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    padding: 30px 0;
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    list-style: none;
+}
+nav h1{
+    margin-right: 45%;
+    color: #00bcd4;
+
+}
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+    background-image: url("back2.avif");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 5% 5% 2%;
+    position: relative;
+}
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 10px;
+    display:flex;
+    gap: 15px; /* Spacing between icons */
+}
+
+.social-link {
+    color: #00bcd4; /* Icon color */
+    font-size: 1.8rem; /* Icon size */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #20bfd1; /* Hover color */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+
+/* Text Content */
+.text-content {
+    position: absolute;
+    left: 6%;
+    bottom: 5%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.text-content h1 {
+    font-size: 2.8rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.text-content span {
+    color: #00bcd4;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}
+
+/* Explore Me Button */
+.explore-btn {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: #121212;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-bottom: 200px;  
+}
+
+.explore-btn:hover {
+    background-color: #0097a7;
+    color: #ffffff;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+
+
+
+/* Image Styling */
+.image-container img {
+    position: absolute;
+    right: 210px;
+    bottom: 180px;
+    width: 300px;
+    height: auto;
+    border-radius: 0  28% 25%;
+    filter: drop-shadow(0 0 100px rgba(0, 188, 212, 10));
+}
+.asd{
+    position: absolute;
+    right: 171px;
+    bottom: 20px;
+    width: 395px;
+    height: auto;
+    filter: drop-shadow(0 0 1000px rgba(0, 188, 212, 1));
+}
+
+/* About Section */
+.about-section {
+    height: 100vh;
+    background-color: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* About Section */
+.about-section {
+    height: 100vh;
+    background-color: #1e1e2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container for Image and Content */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Image (Left Side) */
+.about-image {
+    position: relative;
+    bottom: 3%; /* Align image 3% to bottom */
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+.about-image img {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(0, 188, 212, 0.6));
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Glowing Box (Right Side) */
+.about-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.8);
+    color: #ffffff;
+    max-width: 50%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    animation: fadeIn 3.5s ease-in forwards;
+}
+
+.about-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    text-align: center;
+}
+
+.about-content p span {
+    color: #00bcd4;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.7);
+}
+
+/* Projects Section */
+.projects-section {
+    background-color: #121212;
+    padding: 50px 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.8rem;
+    color: #00bcd4;
+    margin-bottom: 30px;
+}
+
+/* Container for Projects */
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Project Box Styling */
+.project-box {
+    background-color: #1e1e2f;
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 20px rgba(0, 188, 212, 0.7);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* Glowing and Dark Shadow Effect */
+.project-box:hover {
+    box-shadow: 0 0 30px rgba(0, 188, 212, 1);
+    transform: translateY(-5px); /* Hover effect - lift the box */
+}
+
+/* Project Image */
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Project Text */
+.project-text h3 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+}
+/* Contact Section */
+.contact-section {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Left Side: Contact Form */
+.contact-form {
+    width: 48%;
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8);
+}
+
+.contact-form h2 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    background-color: #2c2c3d;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0097a7;
+}
+
+/* Right Side: Categories & Social Media */
+.contact-info {
+    width: 48%;
+    background-color: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.8);
+}
+
+.contact-info h3 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-info ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.contact-info ul li a:hover {
+    color: #00bcd4;
+}
+
+#go-to-top {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#go-to-top:hover {
+    background-color: #0097a7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 80%;
+    }
+}
+/* General Responsive Section Styling */
+section {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+/* Hero Section (Home) */
+.hero-section {
+    flex-direction: column; /* Stack content on smaller devices */
+    padding: 10% 5% 5%;
+}
+
+.hero-section .text-content {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.2rem;
+}
+
+.image-container img, .asd {
+    width: 250px;
+    bottom: 5%; /* Adjust positioning for smaller screens */
+}
+
+/* About Section */
+.about-container {
+    flex-direction: column; /* Stack content on smaller devices */
+}
+
+.about-image {
+    margin-bottom: 20px;
+}
+
+.about-content {
+    width: 90%; /* Take up full width for smaller devices */
+    text-align: center; /* Center-align text for smaller screens */
+}
+
+/* Projects Section */
+.projects-container {
+    flex-direction: column; /* Stack project boxes on smaller devices */
+    gap: 20px;
+}
+
+.project-box {
+    width: 90%; /* Full width for smaller screens */
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact-container {
+    flex-direction: column; /* Stack contact form and info */
+    align-items: center;
+}
+
+.contact-form, .contact-info {
+    width: 90%; /* Full width for smaller screens */
+}
+
+/* Navigation Bar */
+nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    text-align: center;
+}
+
+nav ul li {
+    margin: 10px 0; /* Add spacing between items */
+}
+
+nav h1 {
+    margin-right: 0; /* Center the logo/title */
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero-section .text-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .projects-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .project-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .text-content h1 {
+        font-size: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-box {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        font-size: 1rem;
+    }
+
+    .image-container img, .asd {
+        width: 200px;
+        bottom: 5%;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    #go-to-top {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+}
+
+
+/* Keyframes for Image Transition */
+@keyframes slideFromTop {
+    0% {
+        
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for Glowing Text Box */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

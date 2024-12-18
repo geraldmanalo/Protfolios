@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerald's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            
+            <ul>
+                <h1 class="per">My Personal Portfolio</h1>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Fullscreen Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="text-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p id="dynamic-text">My knowledge on the program</p>
+            <a href="#about" class="explore-btn">Explore Me</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="https://www.facebook.com/gerald.manalo.121772" class="social-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.google.com" target="_blank" class="social-link">
+                <i class="fab fa-google"></i>
+            </a>
+        </div>
+    
+        
+        <div class="image-container">
+            <img src="pic2.png" alt="Gerald's Picture">
+        </div>
+        <img class="asd" src="pic3-removebg-preview.png" alt="Gerald's Picture">
+    </section>
+    
+
+    <!-- About Me Section -->
+    <!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <!-- Image on the Left -->
+        <div class="about-image">
+            <img src="pic2.png" alt="About Me Image">
+        </div>
+        <!-- Glowing Text Box on the Right -->
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                Hi Welcome to my portfolio! I’m Gerald Manalo and from brgy 4 alaminos laguna  a passionate developer with experience in programming languages such as 
+                <span>Java</span>, <span>HTML</span>, <span>CSS</span>, <span>Basic JS</span>, and <span>MySQL</span>.
+                I enjoy solving problems, creating interactive projects, and learning new technologies to enhance my skills.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-box">
+            <div class="project-image">
+                <img src="pro1.jpeg" alt="Project 1">
+            </div>
+            <div class="project-text">
+                <h3>PAYROLL-MANAGEMENT SYSTEM</h3>
+                <p>Payroll-management system i create it when i was senior high school this is a type of system that can calculate the sallary of the employe.</p>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-box">
+            <div class="project-image">
+                <img src="pro2.png" alt="Project 2">
+            </div>
+            <div class="project-text">
+                <h3>KLMS / LEARNING MANAGEMENT SYSTEM</h3>
+                <p>The Learning management system we are create this as a team this is out final project this system is for student who was do the same subject.</p>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-box">
+            <div class="project-image">
+                <img src="pro3.jpeg" alt="Project 3">
+            </div>
+            <div class="project-text">
+                <h3>GAME SYSTEM</h3>
+                <p>Game management system is a console application this is our final project on first year. This is like guesting the missing or answering the qeustion on the given qeution.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact-section">
+    <h2 >Contact Us</h2>
+    <div class="contact-container">
+        <!-- Left Side: Contact Form -->
+        <div class="contact-form">
+            <h2 >Contact Us</h2>
+            <form id="contact-form" action="mailto:your-email@gmail.com" method="post" enctype="text/plain">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Right Side: Category and Social Media -->
+        <div class="contact-info">
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <ul>
+                    <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+            <button id="go-to-top" onclick="scrollToTop()">Go to Top</button>
+        </div>
+    </div>
+</section>
+
+
+    
+    <script>
+        // Form validation and submit logic
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Email validation
+    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address.");
+        event.preventDefault(); // Prevent form submission
+        return;
+    }
+
+    // Message validation
+    if (message.trim() === "") {
+        alert("Please enter a message.");
+        event.preventDefault(); // Prevent form submission
+        return;
+    }
+
+    // If valid, the form can be submitted
+});
+
+// Scroll to Top function
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+        // Text Changing Animation
+        const textElement = document.getElementById("dynamic-text");
+        const textOptions = ["Java", "HTML", "CSS", "Basic JavaScript", "MySQL","C#"];
+        let index = 0;
+
+        function changeText() {
+            textElement.innerHTML = `My knowledge on the program: <span>${textOptions[index]}</span>`;
+            index = (index + 1) % textOptions.length;
+        }
+
+        setInterval(changeText, 1000);
+
+    </script>
+</body>
+</html>
